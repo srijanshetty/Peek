@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Peek</title>
+
+    <!-- Stylesheets -->
+    <!-- Jquery CDN -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" />
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/flick/jquery-ui.css'>
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='peek.css'>
+
+  </head>
+  <body>
+    <h1>Peek</h1>
+
+    <div id='console'></div>
+    <textarea id='input' class='disabled' disabled='disabled'></textarea>
+
+    <div id='buttonbar'>
+      <input id='disconnect_button' type='button' value='Disconnect' disabled='disabled' class='button'>
+    </div>
+
+    <!-- login dialog -->
+    <div id='login_dialog' class='hidden'>
+      <label>JID:</label><input type='text' id='jid'>
+      <label>Password:</label><input type='password' id='password'>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Jquery CDN -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js'></script>
+
+    <!-- Strophe library -->
+    <script src='../scripts/strophe/strophe.min.js'></script>
+    <script src='../scripts/strophe/flXHR.js'></script>
+    <script src='../scripts/strophe/strophe.flxhr.min.js'></script>
+
+    <!-- Textbox Widget -->
+    <script src="../scripts/jquery.ui.chatbox.js"></script>
+
+    <!-- Custom JS -->
+    <script src='peek.js'></script>
+
+  </body>
+</html>
